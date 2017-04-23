@@ -1,8 +1,8 @@
 Jambore
 ======
->  clustering web socket app.
+> Jambore '16 monitoring; Web application with socket clustering.
 
-### Installation
+### installation
 ```sh
 $ sudo npm install
 ```
@@ -16,17 +16,27 @@ $ cd ../public
 $ bower install
 ```
 
-### Start
+### application start [dev]
 ```sh
-$ npm start
+# mongod
+$ sh ./mongod
+
+
+# web server
+$ node ./server.js
 ```
 
-### Stop
+### application start [prod]
 ```sh
-$ npm stop
+$ pm2 start jambore.json
 ```
 
-### Restart
+### application restart [prod]
 ```sh
-$ npm restart
+$ pm2 restart jambore.json
+```
+
+### application stop [prod]
+```sh
+$ pm2 restart jambore.json
 ```

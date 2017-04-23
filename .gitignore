@@ -1,0 +1,5 @@
+node_modules/
+bower/
+log/
+mongo/
+mongo.data/
