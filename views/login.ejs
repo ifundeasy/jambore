@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<meta charset="utf-8" />
+	<title><%- locals.title %> : Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="apple-touch-icon" href="/image/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/image/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/image/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/image/favicon/apple-icon-152x152.png">
+	<link rel="icon" type="image/x-icon" href="/image/favicon/favicon.ico" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	<link href="/template/assets/plugins/boostrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="/template/assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+	<link href="/template/assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="/template/pages/css/pages-icons.css" rel="stylesheet" type="text/css">
+	<link class="main-stylesheet" href="/template/pages/css/pages.css" rel="stylesheet" type="text/css" />
+	<!--[if lte IE 9]>
+	<link href="/template/pages/css/ie9.css" rel="stylesheet" type="text/css" />
+	<![endif]-->
+	<script type="text/javascript">
+		window.onload = function () {
+			// fix for windows 8
+			if (navigator.appVersion.indexOf("Windows NT 6.2") != -1)
+				document.head.innerHTML += '<link rel="stylesheet" type="text/css" href="/template/pages/css/windows.chrome.fix.css" />'
+		}
+	</script>
+</head>
+<body class="fixed-header">
+<div
+	style="width: 100%;height: 100%;background-image: url(/image/login_background.jpg);background-repeat: no-repeat;background-size: cover;background-position: center center">
+	<div class="register-container full-height sm-p-t-30">
+		<div class="container-sm-height full-height">
+			<div class="row row-sm-height">
+				<!--<img src="/image/jambore.png" alt="logo" data-src="/image/jambore.png" data-src-retina="/image/jambore.png">-->
+				<div class="col-sm-12 col-sm-height col-middle">
+					<!--<img src="/template/assets/img/logo.png" alt="logo" data-src="/template/assets/img/logo.png" data-src-retina="assets/img/logo_2x.png" width="78" height="22">-->
+					<div class="col-sm-4" style="height:256px;background-repeat: no-repeat;background-image: url(/image/jambore.png);background-position:
+					center center;background-size: contain;"></div>
+					<div class="col-sm-8">
+						<form id="form-login" class="p-t-15" role="form" method="post" action="/auth">
+							<h2>Jambore Nasional</h2>
+							<div class="form-group form-group-default">
+								<label>Username</label>
+								<div class="controls">
+									<input type="text" name="user_name" placeholder="Username" class="form-control" required>
+								</div>
+							</div>
+							<div class="form-group form-group-default">
+								<label>Password</label>
+								<div class="controls">
+									<input type="password" class="form-control" name="password" placeholder="Credentials" required>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 col-sm-6 col-xs-6">
+									<% if (locals.fails.join(' & ')) { %>
+									<label class="text-danger text-error" style="font-style: italic">Kesalahan : <%- locals.fails.join(' & ') %></label>
+									<% } %>
+									<!--<div class="checkbox ">-->
+									<!--<input type="checkbox" value="1" id="checkbox1">-->
+									<!--<label for="checkbox1">Remember me</label>-->
+									<!--</div>-->
+								</div>
+								<div class="col-md-6 col-sm-6 col-xs-6">
+									<div class="pull-right">
+										<button class="btn btn-success m-t-5" type="submit">Masuk</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- BEGIN VENDOR JS -->
+<script src="/template/assets/plugins/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="/template/assets/plugins/modernizr.custom.js" type="text/javascript"></script>
+<script src="/template/assets/plugins/boostrapv3/js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>
