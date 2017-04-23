@@ -1,0 +1,71 @@
+<div page="report_jambore" class="">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<div class="col-xs-6">
+					<div class="panel-title">
+						<button id="download-sum" txt="Unduh data ini (.csv)" type="button" class="btn btn-primary btn-sm no-margin pull-left inline"
+						        style="padding: 5px 5px 1px 5px;">
+							<i class="fa fa-cloud-download" style="font-size: 16px;"></i>
+						</button>
+						<span style="position: relative;top: 6px;margin-left: 5px;">Daftar Presensi Jambore Nasional</span>
+					</div>
+				</div>
+				<div class="pull-right">
+					<div class="col-xs-12">
+						<input type="text" id="search-sum" class="form-control pull-right" placeholder="Cari">
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="panel-body">
+				<div class="table-responsive" id="container-table-sum">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade slide-up disable-scroll" id="modal" tabindex="-1" role="dialog" aria-hidden="false">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content-wrapper">
+				<div class="modal-content">
+					<div class="modal-body no-padding no-margin">
+						<div class="panel panel-default no-margin" style="border-width: 0px;">
+							<div class="panel-heading">
+								<div class="col-xs-9">
+									<div class="panel-title">
+										<button id="download-detail" txt="Unduh data (.csv)" type="button" class="btn btn-primary btn-sm no-margin pull-left inline"
+										        style="padding: 5px 5px 1px 5px;">
+											<i class="fa fa-cloud-download" style="font-size: 16px;"></i>
+										</button>
+										<span style="position: relative;top: 6px;margin-left: 5px;">"<span id="info"></span>"</span>
+									</div>
+								</div>
+								<div class="pull-right">
+									<div class="col-xs-12">
+										<input type="text" id="search-detail" class="form-control pull-right" placeholder="Cari">
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="panel-body" style="padding-bottom: 0px;">
+								<div class="table-responsive" id="container-table-detail">
+									<!---->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<div class="row">
+							<div class="pull-right">
+								<div class="col-lg-12">
+									<button type="button" class="btn btn-default btn-cons no-margin pull-left inline" data-dismiss="modal">Tutup</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="/js/report_jambore.js"></script>

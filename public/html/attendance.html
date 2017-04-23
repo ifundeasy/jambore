@@ -1,0 +1,124 @@
+<div page="attendance" class="m-t-30">
+	<div class="col-lg-4 hidden-md hidden-sm hidden-xs"></div>
+	<div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
+		<div class="panel panel-default">
+			<div class="panel-heading text-center m-b-10">
+				<label id="info" class="panel-title text-info italic">Presensi Peserta Jambore Nasional</label>
+				<div class="clearfix"></div>
+			</div>
+			<div class="panel-body">
+				<form class="" role="form">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group form-group-default required ">
+								<label>Tipe</label>
+								<select id="url" class="form-control full-width" data-placeholder="Select one" data-init-plugin="select2">
+									<option value="aJambore">Jambore</option>
+									<option value="aCamp">Camp</option>
+									<option value="aKegiatan">Aktivitas</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-group form-group-default required ">
+								<label>Presensi</label>
+								<select id="in" class="form-control full-width" data-placeholder="Select one" data-init-plugin="select2">
+									<option value="true">Masuk</option>
+									<option value="false">Keluar</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row hidden">
+						<div class="col-sm-12">
+							<div class="form-group form-group-default required ">
+								<label>Camp</label>
+								<select id="camp" class="form-control full-width" data-placeholder="Select one" data-init-plugin="select2">
+									<!---->
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row hidden">
+						<div class="col-sm-12">
+							<div class="form-group form-group-default required ">
+								<label>Branch</label>
+								<select id="branch" class="form-control full-width" data-placeholder="Select one" data-init-plugin="select2">
+									<!---->
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row hidden">
+						<div class="col-sm-12">
+							<div class="form-group form-group-default required ">
+								<label>Sub Branch</label>
+								<select id="subbranch" class="form-control full-width" data-placeholder="Select one" data-init-plugin="select2">
+									<!---->
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row hidden">
+						<div class="col-sm-12">
+							<div class="form-group form-group-default required ">
+								<label>Gender</label>
+								<select id="sex" class="form-control full-width" data-placeholder="Select one" data-init-plugin="select2">
+									<option value="male">Male</option>
+									<option value="female">Female</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="form-group form-group-default required">
+								<label>Jenis Kegiatan</label>
+								<select id="gsanggar" class="form-control full-width" data-placeholder="Select one" data-init-plugin="select2">
+									<!---->
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="form-group form-group-default required">
+								<label>Aktivitas</label>
+								<select id="sanggar" class="form-control full-width" data-placeholder="Select one" data-init-plugin="select2">
+									<!---->
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="form-group form-group-default required ">
+								<label>Kode Peserta (4 digit)</label>
+								<input type="text" id="code" class="form-control" required="">
+							</div>
+						</div>
+					</div>
+					<div class="row hidden">
+						<div class="col-sm-12">
+							<div class="form-group form-group-default required">
+								<label>Scout ID</label>
+								<input type="text" id="peserta_id" class="form-control" required="">
+							</div>
+						</div>
+					</div>
+				</form>
+				<div class="row pull-right">
+					<div class="col-sm-12">
+						<button type="button" class="btn btn-default btn-sm btn-animated from-left fa fa-refresh" id="reset">
+							<span>Atur ulang</span>
+						</button>
+						<button type="button" class="btn btn-primary btn-sm btn-animated from-left fa fa-save" id="submit">
+							<span>Simpan</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="/js/attendance.js"></script>

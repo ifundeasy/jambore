@@ -1,0 +1,93 @@
+<div page="users" class="">
+	<div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<label id="info" class="text-info italic">Buat baru</label>
+				<div class="clearfix"></div>
+			</div>
+			<div class="panel-body">
+				<form class="" role="form">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="form-group form-group-default required ">
+								<label>Id</label>
+								<input type="text" id="_id" class="form-control" required="" disabled>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="form-group form-group-default required ">
+								<label>Nama</label>
+								<input type="text" id="name" class="form-control" required="">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="form-group form-group-default required">
+								<label>Username</label>
+								<input type="text" id="user_name" class="form-control" required="">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="form-group form-group-default required ">
+								<label>Password</label>
+								<input type="password" id="password" class="form-control" required="">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="form-group form-group-default required ">
+								<label>Password lama</label>
+								<input type="password" id="old_password" class="form-control" required="">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="form-group form-group-default required ">
+								<label>Password pengganti</label>
+								<input type="password" id="new_password" class="form-control" required="">
+							</div>
+						</div>
+					</div>
+				</form>
+				<div class="row pull-right">
+					<div class="col-sm-12">
+						<button type="button" class="btn btn-default btn-sm btn-animated from-left fa fa-refresh" id="reset">
+							<span>Atur ulang</span>
+						</button>
+						<button type="button" class="btn btn-primary btn-sm btn-animated from-left fa fa-save" id="submit">
+							<span>Simpan</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<div class="col-xs-6">
+					<div class="panel-title">Daftar panitia</div>
+					<br />
+					<span style="font-style: italic">Klik baris untuk merubah</span>
+				</div>
+				<div class="pull-right">
+					<input type="text" id="search" class="form-control pull-right" placeholder="Cari">
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="panel-body">
+				<div class="table-responsive" id="tablecontainer">
+					<!---->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="/js/users.js"></script>
