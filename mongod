@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+p=`pwd`
+datadir="$p/mongo.data"
+ip="127.0.0.1"
+
+if [ $IP ]; then
+   ip=$IP
+fi
+
+mkdir -p $logdir
+mkdir -p $datadir
+
+# for non global mongo
+# mongod --bind_ip=$ip --dbpath=$datadir --nojournal --fork --rest "$@" --logappend --verbose
+
+# for local mongo
+mongo/bin/mongod --bind_ip=$ip --dbpath=$datadir --nojournal

@@ -1,0 +1,26 @@
+{
+    "apps": [
+        {
+            "name": "jambore",
+            "script": "./server.js",
+            "autorestart": true,
+            "merge_logs": true,
+            "interpreter": "node",
+            "error_file": "log/jambore.err",
+            "out_file": "log/jambore.out",
+            "log_file": "log/jambore.log",
+            "log_date_format": "YYYY-MM-DD HH:mm:ss Z"
+        },
+        {
+            "name": "jambore:mongod",
+            "script": "./mongod",
+            "autorestart": true,
+            "merge_logs": true,
+            "interpreter": "bash",
+            "error_file": "log/mongod.err",
+            "out_file": "log/mongod.out",
+            "log_file": "log/mongod.log",
+            "log_date_format": "YYYY-MM-DD HH:mm:ss Z"
+        }
+    ]
+}
